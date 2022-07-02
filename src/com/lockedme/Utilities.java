@@ -29,7 +29,6 @@ public class Utilities {
 
     public void showMainMenuMsg(){
         final String MAIN_MENU_OPTION_MSG = """
-                
                 +-----------------------------------------------+
                 | MAIN MENU                                     |
                 +-----------------------------------------------+
@@ -44,8 +43,7 @@ public class Utilities {
     }
 
     public void showFileOperationMsg(){
-        String ASK_FILE_MENU_OPTION = """
-                
+       final String ASK_FILE_MENU_OPTION = """
                 +-----------------------------------------------+
                 | FILE OPERATION OPTIONS                        |
                 +-----------------------------------------------+
