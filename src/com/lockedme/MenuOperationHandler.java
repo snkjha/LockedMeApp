@@ -42,20 +42,22 @@ public class MenuOperationHandler {
             String choice = utilities.getInput().next();
             switch (choice) {
                 case "1" -> {
+                    fileOperationHandler.createEmptyDirectoryIfNotFound(Utilities.MAIN_DIR_NAME);
                     System.out.print("\nEnter File Name to be added:\n» ");
                     String fileName = utilities.getInput().next();
                     fileOperationHandler.createAFiles(Utilities.MAIN_DIR_NAME, fileName, utilities.getInput());
                 }
                 case "2" -> {
+                    fileOperationHandler.createEmptyDirectoryIfNotFound(Utilities.MAIN_DIR_NAME);
                     System.out.print("\nEnter the name of the file to search\n» ");
                     String fileName = utilities.getInput().next();
                     fileOperationHandler.getListOfSearchedFile(Utilities.MAIN_DIR_NAME, fileName);
 
                 }
                 case "3" -> {
+                    fileOperationHandler.createEmptyDirectoryIfNotFound(Utilities.MAIN_DIR_NAME);
                     System.out.print("\nEnter the name of the file to delete\n» ");
                     String fileToBeDeleted = utilities.getInput().next();
-                    fileOperationHandler.createEmptyDirectoryIfNotFound(Utilities.MAIN_DIR_NAME);
                     List<String> listOfFilesToDelete = fileOperationHandler.getListOfSearchedFile(Utilities.MAIN_DIR_NAME, fileToBeDeleted);
                     if (!listOfFilesToDelete.isEmpty()) {
                         System.out.print("""
