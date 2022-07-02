@@ -109,7 +109,7 @@ public class FileOperationHandler {
         List<String> listOfFiles = new ArrayList<>();
         searchFile(path, searchKey, listOfFiles);
         if (listOfFiles.isEmpty()) {
-            System.err.println("Oops! Couldn't find any file with given file name"
+            System.out.println("Oops! Couldn't find any file with given file name"
                     + searchKey + "\n");
         } else {
             System.out.println("\nFile(s) found at these location(s) for the search key \""+searchKey+"\":\n");
